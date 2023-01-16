@@ -1,0 +1,293 @@
+/* ---------------   global styles, common to the entire html tree, */
+/** {
+    margin: 0;
+    padding: 0;
+}*/
+:root {
+    /*content colors used in the page layout */
+     
+    --mine-color-black : rgb(33, 33, 33,1);
+    --secound-color-dark-grey: rgb(117, 117, 117);
+    --mine-color-on-dark-bg-white: rgba(255, 255, 255, 1);
+    --secound-color-dark-bg-white-06a: rgba(255, 255, 255, 0.6); 
+    
+    /* brand color is blue rgb(33, 150, 243), used to: hovered links, button, */
+    --brand-color-blue: rgb(33, 150, 243);
+    
+    --logotype-on-light-bg-black: rgb(0, 0, 0);
+    --logotype-on-dark-bg-white: rgb(255, 255, 255);
+    
+     /*background colors used in the page layout*/
+
+    --portfolio-button-bg-color: rgba(245, 244, 250, 1);
+    
+    /*background colors*/
+    --mine-bg-color-white: rgb(255, 255, 255);
+    --secound-bg-color-white: rgb(245, 244, 250);
+
+    --dark-bg-color-black1: rgb(47, 48, 58);
+
+    --border-color-white1: rgb(238, 238, 238);
+    --border-color-white2: rgb(236, 236, 236);
+    
+}
+
+body {
+    height: auto;
+    width: 1600px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--mine-color-black);
+    background-color: var(--mine-bg-color-white);
+    
+}
+
+
+/*header styles: menu + contacts*/
+.menu {
+    /*font-family: Roboto;*/
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    
+    border-color: var(--border-color-white2);
+}
+/* ------------   logotype classes + on light background, + on dark background ---------------*/
+.logotype{
+    text-decoration: none;
+    font-family: Raleway, Oleo Script, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    /*text-align: left;*/
+}
+.logotype--brand-color {color: var(--brand-color-blue);}
+.logotype--on-light-bg {color: var(--logotype-on-light-bg-black);}
+.logotype--on-dark-bg {color: var(--logotype-on-dark-bg-white);}
+
+
+.nav {
+    list-style-type: none;
+    color: var(--mine-color-black);    
+    /*color: ;*/
+}
+.contact {
+    list-style-type: none;
+    color: var(--secound-color-dark-grey);
+}
+/*footer styles: dark background */
+.footer {
+    
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2097px;
+    padding: 215px;
+    background-color: var(--dark-bg-color-black1);
+    color: var(--mine-color-on-dark-bg-white);
+    
+}
+.link {text-decoration: none;
+    cursor: pointer;
+}
+.footer .link{ color: var(--secound-color-dark-bg-white-06a);}
+
+.link:hover,
+.link:focus {
+    color: var(--brand-color-blue);
+}
+.address-container {
+    text-decoration: none;
+    /*font-family: Roboto;*/
+    font-size: 14px;
+    font-style: normal;
+    /*font-weight: 400;*/
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--mine-color-on-dark-bg-white); 
+}
+
+
+/*--------------  main page specyfic styles  ----------------------------*/
+
+.header {
+    width: 1600px;
+    /*height: 600px;*/
+    left: 0px;
+    top: 80px;
+    background-color: var(--dark-bg-color-black1);
+}
+.header__slogan {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--mine-color-on-dark-bg-white);
+}
+.header__button {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+
+    background: var(--brand-color-blue);
+   
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--mine-color-on-dark-bg-white);
+    cursor: pointer;
+}
+
+.features {
+    list-style: none;
+    /*position: absolute;    width: 270px;
+    height: 101px;
+    left: 215px;
+    top: 774px;*/
+}
+.feature__name {
+    /*font-family: Roboto;*/
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align:left
+}
+.feature__description { 
+    color: var(--secound-color-dark-grey);
+}
+
+.gallery {list-style-type: none;}
+.gallery__name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center
+}
+.team-section {
+    width: auto;
+    height: auto;
+    background-color: var(--secound-bg-color-white);
+}
+.team-section__name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center
+}
+.team-card__list { list-style-type: none;}
+.team-card {
+    width: 270px;
+    height: 368px;
+    left: 215px;
+    top: 1635px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-card__caption{
+    width: auto;
+    height: auto;
+        
+}
+.team-card__name {
+    /*font-family: Roboto;*/
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    
+}
+.team-card__description {
+    font-size: 16px;
+/*font-weight: 400;*/
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: var(--secound-color-dark-grey);
+}
+
+/*----------------------------------------------------------*/
+/* ---------------------  portfolio page specyfic styles */
+.portfolio-gallery {
+    font-family: 'Roboto', sans-serif;
+    color: var(--mine-color-black);
+    background-color: var(--mine-bg-color-white);
+}
+
+.portfolio__filter {
+    list-style-type: none;
+}
+.portfolio__filter-btn{
+    height: 38px;
+    width: 114px;
+    left: 740px;
+    top: 174px;
+    border-radius: 4px;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--mine-color-black);
+    background-color: var(--secound-bg-color-white);
+    cursor: pointer;
+}
+.portfolio__filter-btn:hover,
+.portfolio__filter-btn:focus {
+    
+    width: 121px;
+    height: 38px;
+    left: 510px;
+    top: 174px;
+    background-color: var(--brand-color-blue);
+    color: var(--mine-color-on-dark-bg-white);
+/* shadow-middle */
+    box-shadow: 0px 3px 1px var(--brand-color-blue), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.portfolio-cards {
+    list-style-type:none;
+}
+.portfolio-card {
+    box-sizing: border-box;
+    height: 404px;
+    width: 370px;
+    left: 215px;
+    top: 262px;
+    border-radius: 0px;
+    
+    border: 1px solid var(--border-color-white2);   
+}
+.portfolio-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: var(--primary-color);
+}
+.portfolio-card__label {
+    
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--secound-color-dark-grey);
+}
