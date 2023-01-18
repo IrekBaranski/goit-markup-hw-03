@@ -6,10 +6,10 @@
 :root {
     /*content colors used in the page layout */
      
-    --mine-color-black : rgb(33, 33, 33,1);
-    --secound-color-dark-grey: rgb(117, 117, 117);
-    --mine-color-on-dark-bg-white: rgba(255, 255, 255, 1);
-    --secound-color-dark-bg-white-06a: rgba(255, 255, 255, 0.6); 
+    --main-color-black : rgb(33, 33, 33,1);
+    --second-color-dark-grey: rgb(117, 117, 117);
+    --main-color-on-dark-bg-white: rgba(255, 255, 255, 1);
+    --second-color-dark-bg-white-06a: rgba(255, 255, 255, 0.6); 
     
     /* brand color is blue rgb(33, 150, 243), used to: hovered links, button, */
     --brand-color-blue: rgb(33, 150, 243);
@@ -22,8 +22,8 @@
     --portfolio-button-bg-color: rgba(245, 244, 250, 1);
     
     /*background colors*/
-    --mine-bg-color-white: rgb(255, 255, 255);
-    --secound-bg-color-white: rgb(245, 244, 250);
+    --main-bg-color-white: rgb(255, 255, 255);
+    --second-bg-color-white: rgb(245, 244, 250);
 
     --dark-bg-color-black1: rgb(47, 48, 58);
 
@@ -36,8 +36,8 @@ body {
     height: auto;
     width: 1600px;
     font-family: 'Roboto', sans-serif;
-    color: var(--mine-color-black);
-    background-color: var(--mine-bg-color-white);
+    color: var(--main-color-black);
+    background-color: var(--main-bg-color-white);
     
 }
 
@@ -69,12 +69,12 @@ body {
 
 .nav {
     list-style-type: none;
-    color: var(--mine-color-black);    
+    color: var(--main-color-black);    
     /*color: ;*/
 }
 .contact {
     list-style-type: none;
-    color: var(--secound-color-dark-grey);
+    color: var(--second-color-dark-grey);
 }
 /*footer styles: dark background */
 .footer {
@@ -85,13 +85,13 @@ body {
     top: 2097px;
     padding: 215px;
     background-color: var(--dark-bg-color-black1);
-    color: var(--mine-color-on-dark-bg-white);
+    color: var(--main-color-on-dark-bg-white);
     
 }
 .link {text-decoration: none;
     cursor: pointer;
 }
-.footer .link{ color: var(--secound-color-dark-bg-white-06a);}
+.footer .link{ color: var(--second-color-dark-bg-white-06a);}
 
 .link:hover,
 .link:focus {
@@ -106,7 +106,7 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--mine-color-on-dark-bg-white); 
+    color: var(--main-color-on-dark-bg-white); 
 }
 
 
@@ -125,7 +125,7 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    color: var(--mine-color-on-dark-bg-white);
+    color: var(--main-color-on-dark-bg-white);
 }
 .header__button {
     width: 200px;
@@ -141,7 +141,7 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
-    color: var(--mine-color-on-dark-bg-white);
+    color: var(--main-color-on-dark-bg-white);
     cursor: pointer;
 }
 
@@ -161,7 +161,7 @@ body {
     text-align:left
 }
 .feature__description { 
-    color: var(--secound-color-dark-grey);
+    color: var(--second-color-dark-grey);
 }
 
 .gallery {list-style-type: none;}
@@ -175,7 +175,7 @@ body {
 .team-section {
     width: auto;
     height: auto;
-    background-color: var(--secound-bg-color-white);
+    background-color: var(--second-bg-color-white);
 }
 .team-section__name {
     font-size: 36px;
@@ -191,7 +191,7 @@ body {
     left: 215px;
     top: 1635px;
 
-    background: #FFFFFF;
+    background: var(--main-bg-color-white);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -217,15 +217,15 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
 
-    color: var(--secound-color-dark-grey);
+    color: var(--second-color-dark-grey);
 }
 
 /*----------------------------------------------------------*/
 /* ---------------------  portfolio page specyfic styles */
 .portfolio-gallery {
     font-family: 'Roboto', sans-serif;
-    color: var(--mine-color-black);
-    background-color: var(--mine-bg-color-white);
+    color: var(--main-color-black);
+    background-color: var(--main-bg-color-white);
 }
 
 .portfolio__filter {
@@ -244,8 +244,8 @@ body {
     line-height: 1.62;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--mine-color-black);
-    background-color: var(--secound-bg-color-white);
+    color: var(--main-color-black);
+    background-color: var(--second-bg-color-white);
     cursor: pointer;
 }
 .portfolio__filter-btn:hover,
@@ -256,7 +256,7 @@ body {
     left: 510px;
     top: 174px;
     background-color: var(--brand-color-blue);
-    color: var(--mine-color-on-dark-bg-white);
+    color: var(--main-color-on-dark-bg-white);
 /* shadow-middle */
     box-shadow: 0px 3px 1px var(--brand-color-blue), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -289,5 +289,5 @@ body {
     line-height: 1.9;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--secound-color-dark-grey);
+    color: var(--second-color-dark-grey);
 }
