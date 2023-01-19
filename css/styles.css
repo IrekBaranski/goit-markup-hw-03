@@ -35,22 +35,48 @@
 body {
     height: auto;
     width: 1600px;
+    display: flex;
+    flex-direction: column;
+
     font-family: 'Roboto', sans-serif;
     color: var(--main-color-black);
-    background-color: var(--main-bg-color-white);
-    
+    /*-- color changed - fix before deploy-- 
+    var(--main-bg-color-white)--*/
+    background-color: greenyellow;
+    border: 1px dashed green;    
 }
 
-
-/*header styles: menu + contacts*/
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;    
+}
+    
+/*---> header styles: menu <----*/
 .menu {
-    /*font-family: Roboto;*/
+    width: 1600px;
+    height: 80px;
+    padding: 25px 215px;
+    background-color:var(--main-bg-color-white);
+ 
+    border-bottom: 1px solid var(--border-color-white2);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
     font-size: 14px;
     font-weight: 500;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     
-    border-color: var(--border-color-white2);
+    }
+.logo {
+    background-color: aqua;
+    /*flex-grow: 1;*/
 }
 /* ------------   logotype classes + on light background, + on dark background ---------------*/
 .logotype{
@@ -66,14 +92,42 @@ body {
 .logotype--on-light-bg {color: var(--logotype-on-light-bg-black);}
 .logotype--on-dark-bg {color: var(--logotype-on-dark-bg-white);}
 
+.nav__items {
+    display: flex;   
+    justify-content: space-between;
+    
+    width: 261px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
 
-.nav {
     list-style-type: none;
-    color: var(--main-color-black);    
-    /*color: ;*/
+    color: var(--main-color-black); 
+    /*background-color: aqua;*/
 }
-.contact {
+
+.nav__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--main-color-black);
+    /*background-color: aquamarine;*/
+}
+
+.contact__items {
+    display: flex;   
+    justify-content: space-between;
+    
+    width: 295px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+
     list-style-type: none;
+    color: var(--second-color-dark-grey);
+}
+.contact__link {
+    text-decoration: none;
+    cursor: pointer;
     color: var(--second-color-dark-grey);
 }
 /*footer styles: dark background */
