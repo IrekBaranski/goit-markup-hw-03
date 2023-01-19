@@ -58,15 +58,19 @@ body {
     
 /*---> header styles: menu <----*/
 .menu {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    
     width: 1600px;
     height: 80px;
-    padding: 25px 215px;
+    /*padding: 25px 227px 25px 215px;*/
+    /*padding-top: 24px;*/
+    padding-left: 215px;
     background-color:var(--main-bg-color-white);
  
     border-bottom: 1px solid var(--border-color-white2);
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    
     
     font-size: 14px;
     font-weight: 500;
@@ -75,8 +79,8 @@ body {
     
     }
 .logo {
+   
     background-color: aqua;
-    /*flex-grow: 1;*/
 }
 /* ------------   logotype classes + on light background, + on dark background ---------------*/
 .logotype{
@@ -92,11 +96,17 @@ body {
 .logotype--on-light-bg {color: var(--logotype-on-light-bg-black);}
 .logotype--on-dark-bg {color: var(--logotype-on-dark-bg-white);}
 
+.nav {
+    margin-left: 93px;
+    margin-right: 371px;
+    padding: 0px;
+    background-color: aquamarine;
+}
 .nav__items {
     display: flex;   
     justify-content: space-between;
     
-    width: 261px;
+    min-width: 254px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -105,7 +115,6 @@ body {
     color: var(--main-color-black); 
     /*background-color: aqua;*/
 }
-
 .nav__link {
     text-decoration: none;
     cursor: pointer;
@@ -113,14 +122,18 @@ body {
     /*background-color: aquamarine;*/
 }
 
+.contact {
+   background-color: bisque;
+}
 .contact__items {
     display: flex;   
     justify-content: space-between;
-    
-    width: 295px;
+    min-width: 295px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
+    
+    
 
     list-style-type: none;
     color: var(--second-color-dark-grey);
