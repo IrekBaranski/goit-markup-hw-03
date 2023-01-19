@@ -79,7 +79,6 @@ body {
     
     }
 .logo {
-   
     background-color: aqua;
 }
 /* ------------   logotype classes + on light background, + on dark background ---------------*/
@@ -143,33 +142,31 @@ body {
     cursor: pointer;
     color: var(--second-color-dark-grey);
 }
-/*footer styles: dark background */
-.footer {
-    
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
-    padding: 215px;
-    background-color: var(--dark-bg-color-black1);
-    color: var(--main-color-on-dark-bg-white);
-    
-}
 .link {text-decoration: none;
     cursor: pointer;
 }
-.footer .link{ color: var(--second-color-dark-bg-white-06a);}
-
 .link:hover,
 .link:focus {
     color: var(--brand-color-blue);
 }
+
+/*footer styles: dark background */
+.footer {
+    width: 1600px;
+    padding: 60px 215px;
+    background-color: var(--dark-bg-color-black1);
+    color: var(--main-color-on-dark-bg-white);
+    }
+.address__link { color: var(--second-color-dark-bg-white-06a);}
+
 .address-container {
     text-decoration: none;
-    /*font-family: Roboto;*/
+    margin-top: 20px;
+    background-color:rgb(0, 0, 0);
+   
     font-size: 14px;
     font-style: normal;
-    /*font-weight: 400;*/
+    
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
@@ -179,12 +176,16 @@ body {
 
 /*--------------  main page specyfic styles  ----------------------------*/
 
-.header {
-    width: 1600px;
-    /*height: 600px;*/
-    left: 0px;
-    top: 80px;
+.header__banner {
+    width: inherit;
+    height: 600px;
     background-color: var(--dark-bg-color-black1);
+}
+.header__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;   
 }
 .header__slogan {
     font-size: 44px;
@@ -193,12 +194,15 @@ body {
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--main-color-on-dark-bg-white);
+    margin: 0px;
 }
 .header__button {
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
     background: var(--brand-color-blue);
    
@@ -207,7 +211,7 @@ body {
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    text-align: center;
+    
     color: var(--main-color-on-dark-bg-white);
     cursor: pointer;
 }
