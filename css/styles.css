@@ -55,7 +55,7 @@ ul {margin-block: 0px;}
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    background-color: rgba(240, 251, 255, 0.8);    
+    background-color: blue;    
 }
     
 /*---> header styles: menu <----*/
@@ -349,9 +349,15 @@ ul {margin-block: 0px;}
     font-family: 'Roboto', sans-serif;
     color: var(--main-color-black);
     background-color: var(--main-bg-color-white);
+    padding: 0px;
 }
 
 .portfolio__filter {
+    display: flex;
+    justify-content: center;
+
+   margin: 0px 0px 20px 0px;
+
     list-style-type: none;
 }
 .portfolio__filter-btn{
@@ -387,15 +393,21 @@ ul {margin-block: 0px;}
 
 .portfolio-cards {
     list-style-type:none;
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    gap: 20px 30px;
+
+    margin: 0px;
 }
 .portfolio-card {
     box-sizing: border-box;
     height: 404px;
     width: 370px;
-    left: 215px;
-    top: 262px;
     border-radius: 0px;
-    
+    margin: 0px;
+
     border: 1px solid var(--border-color-white2);   
 }
 .portfolio-card__title {
@@ -405,9 +417,10 @@ ul {margin-block: 0px;}
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--primary-color);
+    margin: 0px;
 }
 .portfolio-card__label {
-    
+    margin: 0px;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
