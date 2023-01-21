@@ -349,7 +349,7 @@ ul {margin-block: 0px;}
     font-family: 'Roboto', sans-serif;
     color: var(--main-color-black);
     background-color: var(--main-bg-color-white);
-    padding: 0px;
+    
 }
 
 .portfolio__filter {
@@ -394,12 +394,12 @@ ul {margin-block: 0px;}
 .portfolio-cards {
     list-style-type:none;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     
     flex-wrap: wrap;
-    gap: 20px 30px;
+    gap: 30px 30px;
 
-    margin: 0px;
+    
 }
 .portfolio-card {
     box-sizing: border-box;
