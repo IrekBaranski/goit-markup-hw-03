@@ -45,8 +45,12 @@ body {
     background-color: greenyellow;
     border: 1px dashed green;    
 }
-ul {margin-block: 0px;}
-
+/* reset properties: ul, h */
+ul {
+    margin-block: 0px;
+    padding-inline-start: 0p;
+    background-color: chocolate;
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -351,10 +355,7 @@ ul {margin-block: 0px;}
     background-color: var(--main-bg-color-white);
     
 }
-ul {
-    padding-inline-start: 0p;
-    background-color: chocolate;
-}
+
 .portfolio__filter {
     list-style-type: none;
     padding-inline-start: 0px;
@@ -399,7 +400,7 @@ ul {
     justify-content:space-between;
     padding: 15px;
     flex-wrap: wrap;
-    gap: 40px 30px;
+    gap: 30px 30px;
 
     background-color: brown;  
 }
@@ -412,8 +413,9 @@ ul {
 .portfolio-card__caption {
     width: 370px;
     margin: 0px;
-    padding: 10px;
+    padding: 20px 24px;
 
+    border-top: 1px solid var(--main-bg-color-white);
     border-left: 1px solid var(--border-color-white2);
     border-right: 1px solid var(--border-color-white2);
     border-bottom: 1px solid var(--border-color-white2);
