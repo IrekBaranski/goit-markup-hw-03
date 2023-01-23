@@ -109,7 +109,7 @@ p {
 /* ----- header & menu global styles    ----- */
 /* ----- ------------------------------ ----- */
 
-.header {
+.header-menu {
     width: 1600px;
     background-color:var(--main-bg-color-white);
     border-bottom: 1px solid var(--border-color-white2);
@@ -125,7 +125,7 @@ p {
     letter-spacing: 0.02em;
 }
 .logo {
-    border: 1px dashed gray;
+    
 }
 .nav {
     margin-left: 93px;
@@ -218,10 +218,12 @@ p {
     background-color: var(--dark-bg-color-black1);
 }
 .header__box {
+    height: 600px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 200px;   
+    row-gap: 30px;
 }
 .header__slogan {
     font-size: 44px;
@@ -230,16 +232,13 @@ p {
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--main-color-on-dark-bg-white);
-    margin: 0px;
+   
 }
 .header__button {
     width: 200px;
     height: 50px;
     display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-
+    
     background: var(--brand-color-blue);
    
     font-family: Roboto;
