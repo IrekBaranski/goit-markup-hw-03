@@ -411,8 +411,7 @@ p {
 .portfolio-cards {
     list-style-type:none;
     display: flex;
-    justify-content:space-between;
-    padding: 0px 15px;
+    justify-content:center;
     flex-wrap: wrap;
     gap: 30px 30px; 
 
