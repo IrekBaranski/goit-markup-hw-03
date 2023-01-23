@@ -21,35 +21,39 @@
   <body>
     
     <!--Page header-->    
-    <header class="menu">
-        <!--LOGO on light background-->
-        <div class="logo">
-            <a class="link" href="./index.html" >
-                <span class="logotype logotype--brand-color">Web</span>
-                <span class="logotype logotype--on-light-bg">Studio</span>
-            </a>
-        </div>
-        <nav class="nav">
-            <ul class="nav__items">
-                <li>
-                    <a class="nav__link link" href="./index.html">Agencja</a>
-                </li>
-                <li>
-                    <a class="nav__link link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a class="nav__link link" href="#/">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="contact">
-            <ul class="contact__items">
-                <li><a class="link contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li><a class="link contact__link" href="tel:+48111111111">+48 111 111 111</a>
-                </li>
-            </ul>
-        </div>              
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <!--LOGO on light background-->
+                <div class="logo">
+                    <a class="link" href="./index.html" >
+                        <span class="logotype logotype--brand-color">Web</span>
+                        <span class="logotype logotype--on-light-bg">Studio</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__items">
+                        <li>
+                            <a class="nav__link link" href="./index.html">Agencja</a>
+                        </li>
+                        <li>
+                            <a class="nav__link link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="nav__link link" href="#/">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contact">
+                    <ul class="contact__items">
+                        <li><a class="link contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li><a class="link contact__link" href="tel:+48111111111">+48 111 111 111</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>             
     </header>
     
     <!--Page content-->
@@ -86,9 +90,9 @@
                 </ul>
             </div>
         </section> 
-        <section class="section">
-            <div class="container">
-                <h2 class="gallery__name">Czym się zajmujemy</h2>
+        <div class="container">
+            <h2 class="gallery__name">Czym się zajmujemy</h2>
+            <section class="section--short-padding-top">
                 <ul class="gallery">
                     <li>
                         <figure class="gallery__item">
@@ -115,12 +119,11 @@
                         </figure>
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <section class="team-section section">
+            </section>
+        </div>
+        <section class="section-team--bg-color section">
             <div class="container">
-                <h2 class="team-section__name">Nasz Zespół</h2>
+                <h2 class="section-team__name">Nasz zespół</h2>
                 <ul class="team-cards">
                     <li>
                         <figure class="team-card">
@@ -142,7 +145,7 @@
                             >
                             <figcaption class="team-card__caption">
                                 <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Product Designer</p>
+                                <p class="team-card__description">Frontend Developer</p>
                         </figcaption>
                         </figure>
                     </li>
@@ -154,7 +157,7 @@
                             >
                             <figcaption class="team-card__caption">
                                 <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Product Designer</p>
+                                <p class="team-card__description">Marketing</p>
                         </figcaption>
                         </figure>
                     </li>
@@ -166,7 +169,7 @@
                             >
                             <figcaption class="team-card__caption">
                                 <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Product Designer</p>
+                                <p class="team-card__description">UI Designer</p>
                         </figcaption>
                         </figure>
                     </li>
@@ -175,7 +178,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer section--footer-padding">
         <div class="container">
             <div class="logo">
                 <a class="link" href="./index.html">
