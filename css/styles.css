@@ -130,7 +130,7 @@ p {
 .nav {
     margin-left: 93px;
     margin-right: 371px;
-    border: 1px dashed gray;
+    /*border: 1px dashed gray;*/
 }
 .nav__items {
     display: flex;   
@@ -187,7 +187,7 @@ p {
 }
 .footer__box {
     padding-left: 15px;
-    background-color: black;
+    /*background-color: black;*/
 }
 .address__link--color { color: var(--second-color-dark-bg-white-06a);}
 
@@ -415,7 +415,7 @@ p {
     flex-wrap: wrap;
     gap: 30px 30px; 
 
-    background-color: brown;  
+   /*background-color: brown;  */
 }
 .portfolio-card {
     
