@@ -51,6 +51,12 @@ ul {
     padding-inline-start: 0p;
     background-color: chocolate;
 }
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -398,24 +404,22 @@ ul {
     list-style-type:none;
     display: flex;
     justify-content:space-between;
-    padding: 15px;
+    padding: 0px 15px;
     flex-wrap: wrap;
-    gap: 30px 30px;
+    gap: 30px 30px; 
 
     background-color: brown;  
 }
 .portfolio-card {
     
     width: 370px;
-    border-radius: 5px;
     margin: 0px;   
 }
 .portfolio-card__caption {
     width: 370px;
     margin: 0px;
-    padding: 20px 24px;
+    padding: 15px 24px 20px;
 
-    border-top: 1px solid var(--main-bg-color-white);
     border-left: 1px solid var(--border-color-white2);
     border-right: 1px solid var(--border-color-white2);
     border-bottom: 1px solid var(--border-color-white2);
@@ -427,10 +431,10 @@ ul {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--primary-color);
-    margin: 0px;
+    margin-bottom: 4px;
 }
 .portfolio-card__label {
-    margin: 0px;
+    
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
