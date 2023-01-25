@@ -156,7 +156,8 @@ p {
 }
 
 .contact {
-    display: flex; 
+    display: flex;
+    padding: 10px; 
         
    /* border-radius: 5px;
     background-color: aqua;*/
