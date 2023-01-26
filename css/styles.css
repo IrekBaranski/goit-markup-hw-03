@@ -99,7 +99,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 15px 4px 15px;
+    padding: 24px 15px 24px 15px;
     
     font-size: 14px;
     font-weight: 500;
@@ -112,9 +112,6 @@ p {
 /* ----- ------------------------------ ----- */
 
 .logo {
-   
-    /*border-radius: 10px;    
-    background-color: rgba(0, 255, 0, 0);*/
     text-decoration: none;
     margin-right: 97px;
 }
@@ -128,7 +125,7 @@ p {
     font-family: Raleway, Oleo Script, sans-serif;
     font-size: 26px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 1.1925;
     letter-spacing: 0.03em;
 }
 .logotype--brand-color {color: var(--brand-color-blue);}
@@ -157,10 +154,6 @@ p {
 
 .contact {
     display: flex;
-    padding: 10px; 
-        
-   /* border-radius: 5px;
-    background-color: aqua;*/
 }
 .contact__items {
     display: flex;   
