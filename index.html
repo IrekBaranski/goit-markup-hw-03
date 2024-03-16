@@ -2,198 +2,171 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" >
-    <meta name="description" content="Nauka podstaw HTML5, grupa HTML+CSS PL ON 11, zadanie domowe nr 3, autor: Ireneusz Barański" >
-    <title>WebStudio- main page</title>
-
-    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!--
-    <style> 
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap'); 
-    </style>
-    -->
+    <meta name="description" content="grupa HTML CSS.Poland 2.0, zadanie HW-01 autor: Ireneusz Barański" >
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" 
+    />
+    <!-- normalize-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/styles.css"
+    />
+    <title>WebStudio-main page</title>
   </head>
 
   <body>
-    
-    <!--Page header-->    
     <header class="page-header">
-        <div class="container menu">
-            <!--LOGO on light background-->
-            <div class="logo">
-                <a class="logo__link link" href="./index.html" >
-                    <span class="logotype logotype--brand-color">Web</span>
-                    <span class="logotype logotype--on-light-bg">Studio</span>
-                </a>
-            </div>
-            <nav class="nav">
-                <ul class="nav__items">
-                    <li>
-                        <a class="nav__link link" href="./index.html">Agencja</a>
-                    </li>
-                    <li>
-                        <a class="nav__link link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="nav__link link" href="#/">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="contact">
-                    <ul class="contact__items">
-                        <li><a class="link contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li><a class="link contact__link" href="tel:+48111111111">+48 111 111 111</a>
-                        </li>
-                    </ul>
-                
-            </div> 
-        </div>             
+        <nav class="nav page-header__nav">
+            <!-- company logo ="c-logo", logotype desc. logo letters, background -->
+            <a class="logo nav__logo link" href="./index.html">Web
+                <span class="logo--dark-theme">Studio</span>
+            </a>
+            <!-- manu nav  -->
+            <ul class="menu nav__menu">
+                <li class="nav__item">
+                    <a class="link" href="./index.html">Studio</a>
+                </li>
+                <li>
+                    <a class="link" href="">Portfolio</a>
+                </li>
+                <li>
+                    <a class="link" href="">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <address class="contact page-header__contact">
+            <ul>
+                <li>
+                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+
+                <li>
+                    <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+
+            </ul>
+        </address>         
     </header>
-    
-    <!--Page content-->
+
     <main>
-        <header class="header__banner">
-            <div class="container">
-                <div class="header__box">
-                    <h1 class="header__slogan">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU </h1>
-                    <button class="header__button" type="button" >Zamów usługe</button>
-                </div>
-            </div>               <!--ten obiekt został przeniesiony i połączony jako 1 sekcja w main-->
-        </header>           
-        <section class="section">
-            <div class="container">
-                <ul class="feature">
-                    <li class="feature__item">
-                        <h4 class="feature__name">LOREM IPSUM</h4>
-                        <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                        </p>
-                    </li>
-                    <li class="feature__item">
-                        <h4 class="feature__name">LOREM IPSUM</h4>
-                        <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                        </p>
-                    </li>
-                    <li class="feature__item">
-                        <h4 class="feature__name">LOREM IPSUM</h4>
-                        <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                        </p>
-                    </li>
-                    <li class="feature__item">
-                        <h4 class="feature__name">LOREM IPSUM</h4>
-                        <p class="feature__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section> 
-        <div class="container">
-            <h2 class="gallery__name">Czym się zajmujemy</h2>
-            <section class="section--short-padding-top">
-                <ul class="gallery">
-                    <li>
-                        <figure class="gallery__item">
-                        <img src="images/mainpage-what-we-do-close-up-image-programer-working-his-desk-office_1098-18707.jpg" alt="programista pracujący w swoim biurze przy biurku."
-                        height="294"                    
-                        width="370"
-                        >
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="gallery__item">
-                        <img src="images/mainpage-what-we-do-web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg" alt="Web UI designers przy pracy, tworzy interfejs na urządznia mobilne"
-                        height="294"                    
-                        width="370"
-                        >
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="gallery__item">
-                        <img src="images/mainpage-what-we-do-creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg" alt="Projektant strony internetowej przy pracy, użwa tabletu graficznego."
-                        height="294"                    
-                        width="370"
-                        >
-                        </figure>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <section class="section-team--bg-color section">
-            <div class="container">
-                <h2 class="section-team__name">Nasz zespół</h2>
-                <ul class="team-cards">
-                    <li>
-                        <figure class="team-card">
-                            <img src="images/mainpage-team-product-designer.jpg" alt="portret uśmiechniety pan w okularach" 
-                            height="260"
-                            width="270"
-                            >
-                            <figcaption class="team-card__caption">
-                                <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Product Designer</p>
-                        </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="team-card">
-                            <img src="images/mainpage-team-frontend-developer.jpg" alt="portret uśmiechnieta pani w okularach" 
-                            height="260"
-                            width="270"
-                            >
-                            <figcaption class="team-card__caption">
-                                <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Frontend Developer</p>
-                        </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="team-card">
-                            <img src="images/mainpage-team-marketing.jpg" alt="portret uśmiechniety pan " 
-                            height="260"
-                            width="270"
-                            >
-                            <figcaption class="team-card__caption">
-                                <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">Marketing</p>
-                        </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="team-card">
-                            <img src="images/mainpage-team-ui-designer.jpg" alt="portret uśmiechniety pan w okularach na tle budynków" 
-                            height="260"
-                            width="270"
-                            >
-                            <figcaption class="team-card__caption">
-                                <h3 class="team-card__name">John Doe</h3>
-                                <p class="team-card__description">UI Designer</p>
-                        </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
+        <!-- 1st section - order -->
+        <section class="section background--dark" >
+            <h1 class="header1">Effective Solutions for Your Business</h1>
+            <button class="btn section__btn" type="button">Order Service</button>
+        </section>
+        <!-- 2nd section - advantages            -->
+        <section class="section background--white">
+            <h2 class="header3 text-align-center">advantage</h2>
+            <ul>
+                <li>
+                    <h3 class="header3">Strategy</h3>
+                    <p class="section__text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>        
+                </li>
+                <li>
+                    <h3 class="header3">Punctuality</h3>
+                    <p class="section__text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>        
+                </li>
+                <li>
+                    <h3 class="header3">Diligence</h3>
+                    <p class="section__text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>        
+                </li>
+                <li>
+                    <h3 class="header3">Technologies</h3>
+                    <p class="section__text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>        
+                </li>
+            </ul>
+        </section>
+        <!--     -->
+        <!-- 3rd section - Our team : change background color (darker white) team-->
+        <section class="section background--light">
+            <h2 class="header2">Our Team</h2>
+            <ul>
+                <li class="background--white">
+                    <img src="./images/mark-guerrero-product-designer.jpg" alt="uśmiechnięty mężczyzna z brodą"           
+                    width="264">
+                    <h3 class="header3">Mark Guerrero</h3>
+                    <p class="section__text">Product Designer</p>
+                </li>
+                <li class="background--white">
+                    <img src="./images/tom-ford-fronted-developer.jpg" alt="zdjęcie mężczyzny"           
+                    width="264">
+                    <h3 class="header3">Tom Ford</h3>
+                    <p class="section__text">Frontend Developer</p>
+                </li>
+                <li class="background--white">
+                    <img src="./images/camila-garcia-marketing.jpg" alt="zdjęcie kobiety"          
+                    width="264">
+                    <h3 class="header3">Camila Garcia</h3>
+                    <p class="section__text">Marketing</p>
+                </li>
+                <li class="background--white">
+                    <img src="./images/daniel-wilson-ui-designer.jpg" alt="zdjęcie okienek z aplikacji bankowej"
+                    width="264">
+                    <h3 class="header3">Daniel Wilson</h3>
+                    <p class="section__text">UI Designer</p>
+                </li>
+
+            </ul>
+        </section>
+        <!-- 4th section - Our Portfolio - cards colection-->
+        <section class="section background--white">
+            <h2 class="header2 text-align-center">Our Portfolio</h2>
+            <ul>
+                <li>
+                    <img src="./images/portfolio_project_banking_app.jpg" alt="zdjęcie mężczyzny"           
+                    width="360">
+                    <h3 class="header3">Banking App</h3>
+                    <p class="section__text">App</p>
+                </li>
+                <li>
+                    <img src="./images/portfolio_project_Cashless_Payment.jpg" alt="zdjęcie wykonywanie płatności telefonem"           
+                    width="360">
+                    <h3 class="header3">Cashless Payment</h3>
+                    <p class="section__text">Marketing</p>
+                </li>
+                <li>
+                    <img src="./images/portfolio_project_meditation-app.jpg" alt="zdjęcie laptop i smartfon z identycznym orazem na ekranie"           
+                    width="360">
+                    <h3 class="header3">Meditation App</h3>
+                    <p class="section__text">App</p>
+                </li>
+                <li>
+                    <img src="./images/portfolio_project_taxi_service.jpg" alt="wnętrze samochodu, miejsce kierowcy z uruchomioną aplikacją na telefonie"           
+                    width="360">
+                    <h3 class="header3">Taxi Service</h3>
+                    <p class="section__text">Marketing</p>
+                </li>
+                <li>
+                    <img src="./images//portfolio_project_Screen_Illustrations.jpg" alt="Smartfon z aplikacją i przykładowymi oknami aplikacji"           
+                    width="360">
+                    <h3 class="header3">Screen Illustrations</h3>
+                    <p class="section__text">Design</p>
+                </li>
+                <li>
+                    <img src="./images//portfolio_project_online_courses.jpg" alt="kobieta korzystająca ze smartfona"           
+                    width="360">
+                    <h3 class="header3">Online Courses</h3>
+                    <p class="section__text">Marketing</p>
+                </li>
+            </ul>
+
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer__box">
-                <div class="logo">
-                    <a class="link" href="./index.html">
-                        <span class="logotype logotype--brand-color">Web</span>
-                        <span class="logotype logotype--on-dark-bg">Studio</span>
-                    </a>        
-                </div>
-                <address class="address__box">
-                    <p> m. Warszawa, Aleje Jerozolimskie 21 </p>
-                    <p><a class="link address__link--color" href="mailto:info@example.com">info@example.com</a></p>
-                    <p><a class="link address__link--color" href="tel:+48111111111">+48 111 111 111</a></p>
-                </address>
-            </div>
-        </div>
+        <a class="logo footer__logo link" href="./index.html">Web
+            <span class="logo--light-theme">Studio</span>
+        </a>
+        <p class="footer__text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p> 
     </footer>
+
     </body>
