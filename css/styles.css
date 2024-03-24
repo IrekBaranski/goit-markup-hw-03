@@ -1,66 +1,73 @@
-* {
-    list-style-type: none;
-    text-decoration: none;
+/* Global styles*/
+*,
+*::before,*::after {
     margin: 0;
-    /*padding: 0;*/
+    padding: 0;
 }
-:root {
-    /* color scheme used in the page layout */
-    /* main color 'navy blue', used in Overlays Shadows Headings*/    
-    --main-color: #2E2F42;
-    /* success color 'green': Valid fields, Success messages*/
-    --success-color: #31D0AA;
-    /* body text color 'slate' */
-    --primary-text: #434455;
-    /* 'light slate': Helper text, Deemphasized text*/
-    --subtle-text: #8E8F99;
-    /* accent color 'cornflower': Hairlines, Subtle backgrounds */ 
-    --accent: #E7E9FC;
-
-    /* background colors 'white': Header,  team card background*/
-    --white-bg: #f  fffff;
-    /*light mode backgrounds color 'cloud' Light mode backgrounds, Light mode Dialogs/alerts*/
-    --light-mode-bg: #F4F4FD;
-    --subtle-bg: var(--accent);
-
-    /* modal color 'navy blue modal': Overlay*/
-    --modal-overlay: #2E2F42;
-    --hero-img-bg: #2E2F42;
-    /* modal background 'dairy'*/
-    --modal-bg: #FCFCFC;
-
-    /* brand color: used in CTAs, Focused, Active states, Links*/
-    --primary-brand: #4d5ae5;
-    --pressed-state: #404BBF;
-    
-    --logo-dark-theme: var(--main-color);
-    --logo-light-theme: var(--light-mode-bg);  
+:root{
+    --accent-color: #E7E9FC;
 }
-
 body {
     /* body typography */   
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #434455; /*var(--primary-text);*/
-    background-color: #FFFFFF; /*var(--light-mode-bg); */
+    color: #434455; /* slate var(--primary-text);*/
+    background-color: #FFFFFF; /*var(--white-bg); */
 }
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {margin: 0;}
 
-.link {
-    cursor: pointer;
-}
+p {margin: 0;}
+
+ul {list-style-type: none;}
+
+a {text-decoration: none;}
+
+.link {text-decoration: none;}
 
 .link:hover,
 .link:focus {
     color: #404bbf; /*var(--pressed-state)*/
 }
 
-/* HEADER STYLES: nav, logo, menu, contacts*/
-/*.nav {}*/
+img {display: block;}
 
-/* class logo + light and dark theme */
+.section{
+    /*responsible for: padding, background */
+    padding: 120px 0;
+}
+
+.container{
+    /* width makiety projektu projektu 1440px, 
+    szerokość kontenera 1158 px,
+    szerokość contentu z makiety 1128 px => padding 15px
+    margin-right auto i margin-left: auto centrowanie container*/
+    
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1158px;
+    padding: 0 15px;
+}
+/* */
+
+/* HEADER-SECTION cont.: Block logo, Block nav, Block address*/
+
+.header-section{
+    padding: 0;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-section .container{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+/* */
+
+/* Block logo + light and dark theme */
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -70,6 +77,11 @@ body {
     text-transform: uppercase;
     color: #4d5ae5; /*var(--primary-brand);*/
 }
+.header-section__logo {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 .logo--dark-theme {color: #2e2f42; /*var(--logo-dark-theme);*/}
 .logo--light-theme {color: #F4F4FD; /*var(--logo-light-theme);*/}
 
@@ -77,96 +89,262 @@ body {
 .logo .link:hover{
     color: #404bbf; /*var(--pressed-state)*/
 }
+/* */
 
-/* menu styles*/
-.menu .link{
-        color: #2e2f42; /*var(--main-color);*/
+/* Block nav */
+
+.header-section__nav {
+    margin-left: 76px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
-.menu .link:focus,
-.menu .link:hover{
+.nav{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:#2e2f42;
+}
+
+.nav__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;  
+}
+
+.nav .link{
+    color: #2e2f42; /*var(--main-color);*/
+}
+.nav .link:focus,
+.nav .link:hover{
     color: #404bbf; /*var(--pressed-state)*/
 }
 
-/* address styles */
-.contact{
-    font-style: normal;
+/* Block address */
+
+.header-section__address{
+    margin-left: 332px;
+    margin-top: 24px;
+    margin-bottom: 24px;  
 }
-.contact .link{
+.address{
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.address__items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+.address .link{
     color: #434455; /*var(--primary-text)*/
 }
-.contact .link:focus,
-.contact .link:hover{
+.address .link:focus,
+.address .link:hover{
     color: #404bbf; /*var(--pressed-state)*/
 }
+/* */
+/* END HEADER-SECTION */
+/* */
 
-/* ----- MAIN PAGE ----- */
-/* ----- main page specyfic styles  ----------------------------*/
-/* Block section classes: __bg-(dark, white, light) color-theme; __header-(h1, h2, h3, hidden)
+/* ----- MAIN ----- */
+/* MAIN Section called Section */
+/* Global main classes: bg-(dark, white, light) color-theme; header-(h1, h2, h3, hidden)
 */
 
-
-.background--dark{
-    background-color: #2E2F42;
-}
-.background--white{
+.bg-white{
     background-color: #FFFFFF;
 }
-.background--light{
+.bg-light{
     background-color: #F4F4FD;
 }
 
-.header1{
-    color: #FFFFFF;
+.section__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2E2F42; /* var(--main-color);*/
+    /* test */
+    background-color: green;
+    margin-bottom: 72px;
+}
+.section__item-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42; /* var(--main-color);*/
+
+    /* test */
+    background-color: red;
+}
+
+
+.text-align-center{
+    text-align: center;
+}
+/* */
+/* 1st Entry SECTION ORDER: bg dark theme , h1 header, btn order*/
+
+.entry-section{
+    background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+.entry-title{
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-}
-.header2{
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2E2F42; /* var(--main-color);*/
-}
-.header3{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42; /* var(--main-color);*/
-}
-.text-align-center{
-    text-align: center;
     text-transform: capitalize;
+    color: #FFFFFF;
 }
-/* 1st  SECTION ORDER: bg dark theme , h1 header, btn order*/
-.section__btn{
+
+.entry-section__btn {
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    display: block;
     cursor: pointer;
+    min-width: 169px;
+    padding: 16px 32px;
+    overflow: hidden;
+    
+    border: none;
+    border-radius: 4px;
     background-color: #4D5AE5;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
-.section__btn:hover,
-.section__btn:focus{
+.btn:hover,
+.btn:focus{
     background-color: #404BBF; /*var(--pressed-state)*/
 }
 /* */
-/* 2nd section advantages: bg white, sec header h2, */
-/*  */
-/* footer styles: bg dark, text light */
-.footer{
-    background-color: #2E2F42; /*var(--primary-color)*/
-}
-.footer__text{
-    font-weight: 500;
+
+/* 2nd section advantages ARTICLES, with: 4x articles, bg white, section heading hidden, */
+.hidden {display: none;}
+
+.section__items {
+    display: flex;
+    flex-wrap: wrap;
+    /* option: row-gap: 24px; -> .article:not(.article:first-child) */
+} 
+.article{
+    max-width: calc((100% - 72px)/4);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0,02em;
+    letter-spacing: 0.02em;
+}
+.article:not(.article:first-child) {
+    margin-left: 24px;
+
+    /*test */
+    background-color: orange;
+}
+.article__heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42; /* var(--main-color);*/
+
+    /* test */
+    background-color: brown;
+}
+.article p {
+    margin-top: 8px;
+
+    /* test */
+    background-color: greenyellow;
+}
+
+/* 3rd section "Our Team" cards: bg cloud, display flex: 4 cards in row */
+/* the same classes as in the previous sections: section, container section__items */
+
+.card {
+    background-color: white;
+    width: calc((100% - 72px)/4);
+    border-radius: 0px 0px 4px 4px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.section__items--gap {
+    row-gap: 48px;
+    column-gap: 24px;
+}
+.card__heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42; /* var(--main-color);*/
+
+    margin-top: 32px;
+
+    /* test */
+    background-color:royalblue;
+}
+.card p {
+    margin-top: 8px;
+    margin-bottom: 32px;
+
+    /* test */
+    background-color: orangered;
+}
+
+
+/*  */
+
+/* 4th section Portfolio: bg white, division list: display flex: 3 cards in row */
+/* */
+.card__portfolio{
+    width: calc((100% - 48px)/3);
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid #E7E9FC;
+}
+.card__portfolio .card__heading {
+    margin-left: 16px;
+}
+.card__portfolio p{
+    margin-left: 16px;
+}
+/* footer styles: bg dark, text light */
+.footer{
+    padding: 100px 0;
+    background-color: #2E2F42; /*var(--primary-color)*/
+}
+.footer__logo {
+    margin: 0;
+}
+.footer__text {
+    margin-top: 16px;
+    max-width: 264px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
     color:#F4F4FD; /*var(--light-mode-bg) */
 }
