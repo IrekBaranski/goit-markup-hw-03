@@ -69,7 +69,7 @@
         <!-- 2nd section - advantages articles -          -->
         <section class="section">
             <div class="container">
-                <h2 class="section__heading hidden">advantage</h2>
+                <h2 class="section__heading visually-hidden">advantage</h2>
                 <ul class="section__items">
                     <li class="article">
                         <h3 class="article__heading">Strategy</h3>
@@ -99,26 +99,34 @@
                     <li class="card">
                         <img src="./images/mark-guerrero-product-designer.jpg" alt="uśmiechnięty mężczyzna z brodą"           
                         width="264">
-                        <h3 class="card__heading text-align-center">Mark Guerrero</h3>
-                        <p class="body-text text-align-center">Product Designer</p>
+                        <div class="card__wrapper">
+                            <h3 class="card__c-heading">Mark Guerrero</h3>
+                            <p class="body-text text-align-center">Product Designer</p>
+                        </div class="card">
                     </li>
                     <li class="card">
                         <img src="./images/tom-ford-fronted-developer.jpg" alt="zdjęcie mężczyzny"           
-                        width="264">
-                        <h3 class="card__heading text-align-center">Tom Ford</h3>
-                        <p class="body-text text-align-center">Frontend Developer</p>
+                            width="264">
+                        <div class="card__wrapper">
+                            <h3 class="card__c-heading">Tom Ford</h3>
+                            <p class="body-text text-align-center">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="card">
                         <img src="./images/camila-garcia-marketing.jpg" alt="zdjęcie kobiety"          
                         width="264">
-                        <h3 class="card__heading text-align-center">Camila Garcia</h3>
-                        <p class="body-text text-align-center">Marketing</p>
+                        <div class="card__wrapper">
+                            <h3 class="card__c-heading">Camila Garcia</h3>
+                            <p class="body-text text-align-center">Marketing</p>
+                        </div>    
                     </li>
                     <li class="card">
                         <img src="./images/daniel-wilson-ui-designer.jpg" alt="zdjęcie okienek z aplikacji bankowej"
                         width="264">
-                        <h3 class="card__heading text-align-center">Daniel Wilson</h3>
-                        <p class="body-text text-align-center">UI Designer</p>
+                        <div class="card__wrapper">
+                            <h3 class="card__c-heading">Daniel Wilson</h3>
+                            <p class="body-text text-align-center">UI Designer</p>
+                        </div>
                     </li>
 
                 </ul>
@@ -132,38 +140,50 @@
                     <li class="card card__portfolio">
                         <img src="./images/portfolio_project_banking_app.jpg" alt="zdjęcie mężczyzny"           
                         width="360">
-                        <h3 class="card__heading">Banking App</h3>
-                        <p class="body-text">App</p>
+                        <div class="card__border-wrapper"> 
+                            <h3 class="card__l-heading">Banking App</h3>
+                            <p class="body-text">App</p>
+                        </div>
                     </li>
                     <li class="card card__portfolio">
                         <img src="./images/portfolio_project_Cashless_Payment.jpg" alt="zdjęcie wykonywanie płatności telefonem"           
                         width="360">
-                        <h3 class="card__heading">Cashless Payment</h3>
-                        <p class="body-text">Marketing</p>
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Cashless Payment</h3>
+                            <p class="body-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="card card__portfolio">
                         <img src="./images/portfolio_project_meditation-app.jpg" alt="zdjęcie laptop i smartfon z identycznym orazem na ekranie"           
                         width="360">
-                        <h3 class="card__heading">Meditation App</h3>
-                        <p class="body-text">App</p>
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Meditation App</h3>
+                            <p class="body-text">App</p>
+                        </div>
                     </li>
                     <li class="card card__portfolio">
                         <img src="./images/portfolio_project_taxi_service.jpg" alt="wnętrze samochodu, miejsce kierowcy z uruchomioną aplikacją na telefonie"           
                         width="360">
-                        <h3 class="card__heading">Taxi Service</h3>
-                        <p class="body-text">Marketing</p>
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Taxi Service</h3>
+                            <p class="body-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="card card__portfolio">
                         <img src="./images//portfolio_project_Screen_Illustrations.jpg" alt="Smartfon z aplikacją i przykładowymi oknami aplikacji"           
                         width="360">
-                        <h3 class="card__heading">Screen Illustrations</h3>
-                        <p class="body-text">Design</p>
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Screen Illustrations</h3>
+                            <p class="body-text">Design</p>
+                        </div>
                     </li>
                     <li class="card card__portfolio">
                         <img src="./images//portfolio_project_online_courses.jpg" alt="kobieta korzystająca ze smartfona"           
                         width="360">
-                        <h3 class="card__heading">Online Courses</h3>
-                        <p class="body-text">Marketing</p>
+                        <div class="card__border-wrapper">
+                            <h3 class="card__l-heading">Online Courses</h3>
+                            <p class="body-text">Marketing</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -172,8 +192,7 @@
 
     <footer class="footer">
         <div class="container">
-            <a class="logo footer__logo link" href="./index.html">Web
-                <span class="logo--light-theme">Studio</span>
+            <a class="logo footer__logo link" href="./index.html">Web<span class="logo--light-theme">Studio</span>
             </a>
             <p class="footer__text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p> 
         </div>

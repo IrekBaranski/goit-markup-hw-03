@@ -57,7 +57,7 @@ img {display: block;}
 
 .header-section{
     padding: 0;
-    border-bottom: 1px solid #E7E9FC;
+    /*border-bottom: 1px solid #E7E9FC;*/
 }
 
 .header-section .container{
@@ -69,6 +69,7 @@ img {display: block;}
 
 /* Block logo + light and dark theme */
 .logo{
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -202,13 +203,17 @@ img {display: block;}
     padding-bottom: 188px;
 }
 .entry-title{
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #FFFFFF; 
 }
 
 .entry-section__btn {
@@ -240,7 +245,18 @@ img {display: block;}
 /* */
 
 /* 2nd section advantages ARTICLES, with: 4x articles, bg white, section heading hidden, */
-.hidden {display: none;}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .section__items {
     display: flex;
@@ -280,6 +296,10 @@ img {display: block;}
 /* 3rd section "Our Team" cards: bg cloud, display flex: 4 cards in row */
 /* the same classes as in the previous sections: section, container section__items */
 
+.section__items--gap {
+    row-gap: 48px;
+    column-gap: 24px;
+}
 .card {
     background-color: white;
     width: calc((100% - 72px)/4);
@@ -289,32 +309,23 @@ img {display: block;}
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-.section__items--gap {
-    row-gap: 48px;
-    column-gap: 24px;
+.card__wrapper {
+    padding: 32px 16px;
 }
-.card__heading {
+
+.card__c-heading {
+    text-align: center;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42; /* var(--main-color);*/
-
-    margin-top: 32px;
+    margin-bottom: 8px;
 
     /* test color 
     background-color:royalblue; */
 }
-.card p {
-    margin-top: 8px;
-    margin-bottom: 32px;
-
-    /* test color 
-    background-color: orangered; */
-}
-
 
 /*  */
 
@@ -323,13 +334,26 @@ img {display: block;}
 .card__portfolio{
     width: calc((100% - 48px)/3);
     border-radius: 0px 0px 0px 0px;
+    
+}
+.card__border-wrapper {
+    padding: 32px 16px;
     border: 1px solid #E7E9FC;
+    border-top: none;
 }
-.card__portfolio .card__heading {
-    margin-left: 16px;
-}
-.card__portfolio p{
-    margin-left: 16px;
+
+.card__l-heading {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42; /* var(--main-color);*/
+    margin-bottom: 8px;
+
+    /* test color 
+    background-color:royalblue; */
 }
 /* footer styles: bg dark, text light */
 .footer{
