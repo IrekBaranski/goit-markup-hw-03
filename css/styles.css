@@ -61,11 +61,12 @@ img {display: block;}
     border-bottom: 1px solid #E7E9FC;
 }
 
-.header-section__wrap{
+.header-section__display{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 /* */
 
@@ -365,9 +366,9 @@ nav{
 }
 .footer__logo {
     margin: 0;
+    margin-bottom: 16px;
 }
 .footer__text {
-    margin-top: 16px;
     max-width: 264px;
 
     font-size: 16px;
