@@ -47,27 +47,24 @@ img {display: block;}
     szerokość kontenera 1158 px,
     szerokość contentu z makiety 1128 px => padding 15px
     margin-right auto i margin-left: auto centrowanie container*/
-    
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1158px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; 
+    margin: 0 auto;
+    
+    max-width: 1158px;   
 }
 /* */
 
 /* HEADER-SECTION cont.: Block logo, Block nav, Block address*/
 
-.header-section{   
-    border-bottom: 1px solid #E7E9FC;
-}
+.header-section{border-bottom: 1px solid #E7E9FC;}
 
 .header__display{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
 }
 /* */
 
@@ -174,13 +171,14 @@ nav{
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42; /* var(--main-color);*/
+    
     margin-bottom: 72px;
     /* test color
-    background-color: green;*/
-    
+    background-color: green;*/  
 }
 .section__item-heading {
     font-weight: 500;
@@ -264,21 +262,14 @@ nav{
 
 .section__items {
     display: flex;
-    flex-wrap: wrap;
+    gap: 24px;
     /* option: row-gap: 24px; -> .article:not(.article:first-child) */
 } 
 .article{
-    max-width: calc((100% - 72px)/4);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    /*calc: column=n gap=x, calc=((100% - (n-1)x)/n) - to można przez stałe zapisać ... */
+    max-width: calc((100% - 72px)/4);   
 }
-.article:not(.article:first-child) {
-    margin-left: 24px;
 
-    /*test color 
-    background-color: orange;*/
-}
 .article__heading {
     font-weight: 500;
     font-size: 20px;
@@ -287,11 +278,15 @@ nav{
     text-transform: capitalize;
     color: #2E2F42; /* var(--main-color);*/
 
+    margin-bottom: 8px;
+
     /* test color
     background-color: brown;*/
 }
 .article p {
-    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 
     /* test color
     background-color: greenyellow; */
@@ -300,11 +295,6 @@ nav{
 /* 3rd section "Our Team" cards: bg cloud, display flex: 4 cards in row */
 /* the same classes as in the previous sections: section, container section__items */
 
-.section__items--wrap {
-    flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
-}
 .card {
     background-color: white;
     width: calc((100% - 72px)/4);
@@ -336,6 +326,11 @@ nav{
 
 /* 4th section Portfolio: bg white, division list: display flex: 3 cards in row */
 /* */
+.section__items--gao {
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
 .card__portfolio{
     width: calc((100% - 48px)/3);
     border-radius: 0px 0px 0px 0px;
