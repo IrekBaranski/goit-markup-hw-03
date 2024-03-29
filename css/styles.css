@@ -326,7 +326,7 @@ nav{
 
 /* 4th section Portfolio: bg white, division list: display flex: 3 cards in row */
 /* */
-.section__items--gao {
+.section__items--gap {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
