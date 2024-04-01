@@ -305,7 +305,7 @@ nav{
     letter-spacing: 0.02em;
 }
 .card__wrapper {
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 .card__c-heading {
@@ -326,7 +326,8 @@ nav{
 
 /* 4th section Portfolio: bg white, division list: display flex: 3 cards in row */
 /* */
-.section__items--gap {
+.portfolio-section__wrapper {
+    display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
